@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
+          <h2 className={styles.selectBoxTitle}>mint a new Culti</h2>
           <p className={styles.selectBoxDescription}>
             Use the NFT Drop Contract to claim an NFT from the collection.
           </p>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
+          <h2 className={styles.selectBoxTitle}>stake your Cultis</h2>
           <p className={styles.selectBoxDescription}>
             Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
             to stake your NFTs, and earn tokens from the <b>Token</b> contract.

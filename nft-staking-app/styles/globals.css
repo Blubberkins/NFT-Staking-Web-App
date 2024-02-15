@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 /* Box sizing rules */
 *,
@@ -32,7 +32,7 @@ select {
 
 body {
   background: var(--black);
-  font-family: "Inter", sans-serif;
+  font-family: "EB Garamond", sans-serif;
   color: var(--white);
   display: flex;
   margin: 0;
