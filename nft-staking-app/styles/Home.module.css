@@ -46,7 +46,9 @@
 .nftBox {
   border-radius: 16px;
   border: 1px solid #ccc;
-  width: 19%;
+  text-align: center;
+  width: auto;
+  max-width: 332px;
   min-height: 200px;
   padding: 16px;
 }
@@ -80,8 +82,10 @@
 /* Between 1200 and 800 */
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   .nftBox {
-    width: 49%;
     margin-top: 16px;
+  }
+  .nftMedia {
+    max-width: 250px;
   }
 }
 
@@ -92,8 +96,10 @@
     justify-content: center;
   }
   .nftBox {
-    width: 90%;
     margin-top: 16px;
+  }
+  .nftMedia {
+    max-width: 200px;
   }
   .optionSelectBox {
     width: 90%;
@@ -175,10 +181,11 @@
 
 .nftMedia {
   width: 100%;
+  max-width: 300px;
   max-height: 300px;
   border-radius: 15px;
 }
 
 .emptySpace {
-  height: 100px;
+  height: 32px;
 }
