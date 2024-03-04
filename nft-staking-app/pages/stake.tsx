@@ -67,8 +67,12 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Stake Your NFTs</h1>
+      <h1 className={styles.h1}>c̶̠̘̣̿͛h̷̹͊̐̚ȧ̵̡̯̦̭́͌̎p̶̧̳̞͍̐͋ẗ̴͙͎̹͈́̎e̶͖̣̾r̵͓̮̪̎ ̵̠͍͍̆Í̸̬̓̓̃Ȉ̷͙̗̠̱̎̆̚:̷͍̦̙͘ ̸̙̍̎̄̈t̷̡̙̟̙͛́̓̂h̵̛͕̪̾̂́e̸̛͉ ̵͕̘̫͙͗̍̏̓f̸̬̠̼̐å̸͎̻̭̗i̶͉͑̂̿͠t̵̥̖̻̊̐̅h̸̖̭̃̿f̷̠̱͐u̷͓̠̙̜͒̾̊l̶̰̯̣̤͛̐</h1>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
+      <div className="emptySpace"></div>
+      <p>Pledge your Cultis into service at the Church - the faithful shall be rewarded...</p>
+      <img src={'/stake2.jpg'} alt="The Church" style={{width: '600px'}}></img>
+      <div className="emptySpace"></div>
 
       {!address ? (
         <ConnectWallet />

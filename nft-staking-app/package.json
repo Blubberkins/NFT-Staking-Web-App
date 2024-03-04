@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^4",
-    "@thirdweb-dev/sdk": "^4",
-    "ethers": "^5",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.10",
+    "@thirdweb-dev/react": "^4.4.11",
+    "@thirdweb-dev/sdk": "^4.0.38",
+    "ethers": "^5.7.2",
     "next": "^13",
-    "react": "^18.2",
-    "react-dom": "^18.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "20.11.17",

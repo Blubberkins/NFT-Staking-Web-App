@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Box sizing rules */
 *,
@@ -32,7 +32,7 @@ select {
 
 body {
   background: var(--black);
-  font-family: "EB Garamond", sans-serif;
+  font-family: 'Cardo', sans-serif;
   color: var(--white);
   display: flex;
   margin: 0;
