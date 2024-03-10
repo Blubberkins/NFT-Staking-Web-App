@@ -80,17 +80,17 @@ const Stake: NextPage = () => {
       <div className={styles.container}>
         <h1 className={styles.h1}>c̶̠̘̣̿͛h̷̹͊̐̚ȧ̵̡̯̦̭́͌̎p̶̧̳̞͍̐͋ẗ̴͙͎̹͈́̎e̶͖̣̾r̵͓̮̪̎ ̵̠͍͍̆Í̸̬̓̓̃Ȉ̷͙̗̠̱̎̆̚:̷͍̦̙͘ ̸̙̍̎̄̈t̷̡̙̟̙͛́̓̂h̵̛͕̪̾̂́e̸̛͉ ̵͕̘̫͙͗̍̏̓f̸̬̠̼̐å̸͎̻̭̗i̶͉͑̂̿͠t̵̥̖̻̊̐̅h̸̖̭̃̿f̷̠̱͐u̷͓̠̙̜͒̾̊l̶̰̯̣̤͛̐</h1>
         <div className={styles.emptySpace}></div>
-        <p>Pledge your Cultis into service at the Church - the faithful shall be rewarded...</p>
+        <p>Pledge your Cultis into prayer at the Church - the faithful shall be rewarded...</p>
         <hr className={`${styles.divider} ${styles.spacerTop} ${styles.spacerBottom}`} />
 
         {!address ? (
           <ConnectWallet />
         ) : (
           <>
-            <h2>Your Tokens</h2>
+            <h2>Your Devotion</h2>
             <div className={styles.tokenGrid}>
               <div className={styles.tokenItem}>
-                <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
+                <h3 className={styles.tokenLabel}>Claimable $FAITH</h3>
                 <p className={styles.tokenValue}>
                   <b>
                     {!claimableRewards
@@ -101,7 +101,7 @@ const Stake: NextPage = () => {
                 </p>
               </div>
               <div className={styles.tokenItem}>
-                <h3 className={styles.tokenLabel}>Current Balance</h3>
+                <h3 className={styles.tokenLabel}>Current $FAITH</h3>
                 <p className={styles.tokenValue}>
                   <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
                 </p>
@@ -116,7 +116,7 @@ const Stake: NextPage = () => {
             </Web3Button>
 
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            <h2>Your Staked NFTs</h2>
+            <h2>Cultis in Prayer</h2>
             <div className={styles.nftBoxGrid}>
               {stakedTokens &&
                 stakedTokens[0]?.map((stakedToken: BigNumber) => (
@@ -128,7 +128,7 @@ const Stake: NextPage = () => {
             </div>
 
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            <h2>Your Unstaked NFTs</h2>
+            <h2>Available Cultis</h2>
             <div className={styles.nftBoxGrid}>
               {ownedNfts?.map((nft) => (
                 <div className={styles.nftBox} key={nft.metadata.id.toString()}>
@@ -141,7 +141,7 @@ const Stake: NextPage = () => {
                     contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}
                   >
-                    Stake
+                    Send to Prayer
                   </Web3Button>
                 </div>
               ))}
